@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Linking external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Main container for layout -->
+    <div class="container">
+
+        <h1>Temperature Conversion:</h1>
+
+        <!-- Input field for entering temperature value -->
+        <input type="number" placeholder="Enter the value" id="inputBox" style="text-align: center;"><br>
+
+        <!-- Radio button: Celsius to Fahrenheit -->
+        <label>C<sup>o</sup> TO F<sup>o</sup></label>
+        <input type="radio" name="unit" id="ctf"><br>
+
+        <!-- Radio button: Fahrenheit to Celsius -->
+        <label>F<sup>o</sup> TO C<sup>o</sup></label>
+        <input type="radio" name="unit" id="ftc"><br>
+
+        <!-- Button to perform conversion -->
+        <button id="but" onclick="conversion()">Submit</button>
+
+        <!-- Output message area -->
+        <p id="result"></p>
+    </div>
+
+    <!-- Linking external JS file -->
+    <script src="script.js"></script>
+</body>
+</html>
